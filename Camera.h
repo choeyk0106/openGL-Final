@@ -36,16 +36,16 @@ public:
   const glm::vec3&  front_direction() const   { return  front_dir_; } 
   const glm::vec3&  up_direction() const      { return  up_dir_; }
   const glm::vec3&  right_direction() const   { return  right_dir_; }    
-    const glm::vec3        center_position() const;
+  const glm::vec3   center_position() const;
   
-    const float                fovy() const                            { return fovy_; }
-    void                            set_fovy(float _fovy)            { fovy_ = _fovy; }
+  const float  fovy() const              { return fovy_; }
+  void         set_fovy(float _fovy)     { fovy_ = _fovy; }
 
 private:
-    glm::vec3 position_;     // position of the camera  
+  glm::vec3 position_;     // position of the camera  
   glm::vec3 front_dir_;    // front direction of the camera    (it should be a unit vector whose length is 1)
   glm::vec3 up_dir_;       // up direction of the camera       (it should be a unit vector whose length is 1)
   glm::vec3    right_dir_;    // right direction of the camera    (it should be a unit vector whose length is 1)
 
-    float fovy_;
+  float fovy_;
 }; 
